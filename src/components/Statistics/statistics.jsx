@@ -9,7 +9,7 @@ const color = item => {
 export const Statistics = ({ title, stats }) => {
   return (
     <section className={styles.statistics}>
-      <h2 class={styles.title}>{title}</h2>
+      {title && <h2>{title}</h2>}
       <ul class={styles.statList}>
         {stats.map(item => (
           <li
